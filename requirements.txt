@@ -5,5 +5,6 @@ openai
 google-generativeai
 python-dotenv
 lancedb
+tantivy
 pypdf
 youtube-transcript-api
