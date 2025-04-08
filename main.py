@@ -332,13 +332,17 @@ elif st.session_state.active_tab == "mcq":
                     if hasattr(streaming_response, 'content'):
          
                         full_mcqs = streaming_response.content
+                        print(type(full_mcqs),full_mcqs)
                         mcq_container.markdown(full_mcqs)
+                        # print(full_mcqs)
                     else:
              
                         for chunk in streaming_response:
                             if hasattr(chunk, 'content'):
                                 full_mcqs += chunk.content
+                                print(type(full_mcqs),full_mcqs)
                                 mcq_container.markdown(full_mcqs)
+
                     
            
                     if st.button("Add MCQs to chat history"):
