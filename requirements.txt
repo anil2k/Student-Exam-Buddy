@@ -1,5 +1,6 @@
 streamlit
 agno
+google-genai
 openai
 google-generativeai
 python-dotenv
